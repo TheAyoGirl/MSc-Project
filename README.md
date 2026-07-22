@@ -893,3 +893,323 @@ Recognising these limitations helps ensure responsible and realistic application
 ---
 
 
+# Installation
+
+## Prerequisites
+
+Before running the project, ensure the following software is installed:
+
+- Python 3.11 or later
+- Git
+- Jupyter Notebook or JupyterLab
+- Visual Studio Code (recommended)
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/ED-Wait-Time-Optimisation.git
+
+cd ED-Wait-Time-Optimisation
+```
+
+---
+
+## Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Launch the Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```
+notebooks/Project_Code.ipynb
+```
+
+Run all cells sequentially.
+
+---
+
+# requirements.txt
+
+```text
+numpy>=1.24
+
+pandas>=2.0
+
+matplotlib>=3.7
+
+scikit-learn>=1.4
+
+xgboost>=2.0
+
+scipy>=1.11
+
+imbalanced-learn>=0.12
+
+jupyter>=1.0
+
+ipykernel>=6.0
+
+openpyxl>=3.1
+```
+
+---
+
+# .gitignore
+
+```gitignore
+__pycache__/
+
+.ipynb_checkpoints/
+
+*.pyc
+
+*.pyo
+
+*.pyd
+
+.env
+
+venv/
+
+.idea/
+
+.vscode/
+
+.DS_Store
+
+Thumbs.db
+
+outputs/
+
+models/
+
+*.joblib
+
+*.pkl
+```
+
+---
+
+# LICENSE
+
+```
+MIT License
+
+Copyright (c) 2026 Ayotomiwa Adeyeye
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction...
+
+(Use the standard MIT License text from https://opensource.org/license/mit)
+```
+
+---
+
+# Data Availability
+
+## MIMIC-IV Dataset
+
+The dataset used in this repository **cannot be redistributed** because it is governed by the PhysioNet Data Use Agreement.
+
+Researchers wishing to reproduce this work should obtain credentialed access through:
+
+https://physionet.org/content/mimiciv/
+
+After obtaining access, place the required CSV files inside:
+
+```
+data/raw/
+```
+
+---
+
+# Reproducibility
+
+This project was developed to maximise reproducibility.
+
+To reproduce the results:
+
+1. Obtain credentialed access to MIMIC-IV.
+2. Place the required Emergency Department tables into the `data/raw/` directory.
+3. Install the dependencies listed in `requirements.txt`.
+4. Execute all notebook cells sequentially.
+5. Generated figures, trained models and optimisation outputs will be produced automatically.
+
+---
+
+# Future Improvements
+
+Several opportunities exist to extend this work.
+
+## Machine Learning
+
+- LightGBM
+- CatBoost
+- Transformer Models
+- TabNet
+- Deep Neural Networks
+
+---
+
+## Healthcare Analytics
+
+- NHS Emergency Department validation
+- Multi-hospital evaluation
+- Live patient arrival prediction
+- Ambulance demand forecasting
+- Bed occupancy prediction
+
+---
+
+## Deployment
+
+- Streamlit dashboard
+- FastAPI REST API
+- Docker container
+- Microsoft Azure deployment
+- AWS SageMaker deployment
+
+---
+
+## Explainable AI
+
+- SHAP
+- LIME
+- Counterfactual explanations
+- Model monitoring
+- Drift detection
+
+---
+
+## Optimisation
+
+- Reinforcement Learning
+- Dynamic staffing optimisation
+- Real-time queue optimisation
+- Ambulance diversion modelling
+- Simulation-based optimisation
+
+---
+
+# Citation
+
+If you use this repository in academic work, please cite:
+
+```bibtex
+@misc{Adeyeye2026,
+  author       = {Ayotomiwa Adeyeye},
+  title        = {Optimising Emergency Department Waiting Times Using Machine Learning},
+  year         = {2026},
+  publisher    = {GitHub},
+  url          = {https://github.com/yourusername/ED-Wait-Time-Optimisation}
+}
+```
+
+---
+
+# Author
+
+## Ayotomiwa Adeyeye
+
+MSc Data Science & Artificial Intelligence
+
+Edge Hill University
+
+Interests:
+
+- Machine Learning
+- Healthcare Analytics
+- Artificial Intelligence
+- Predictive Modelling
+- Decision Support Systems
+- Explainable AI
+- Operations Research
+
+---
+
+# Acknowledgements
+
+The author gratefully acknowledges:
+
+- Edge Hill University
+- PhysioNet
+- The MIMIC-IV research team
+- The developers of Python, Scikit-learn and XGBoost
+- The open-source machine learning community
+
+---
+
+# Release Notes
+
+## v1.0.0 – Initial Release
+
+### Added
+
+- End-to-end machine learning pipeline
+- Emergency Department data preprocessing
+- Feature engineering workflow
+- Linear Regression baseline
+- Logistic Regression classifier
+- Random Forest implementation
+- XGBoost implementation
+- Hyperparameter optimisation
+- Regression evaluation
+- Classification evaluation
+- Explainable AI
+- Fairness analysis
+- Risk stratification
+- Demand forecasting
+- Staffing recommendation engine
+- Linear Programming optimisation
+- Patient routing module
+- What-if scenario simulator
+- Executive dashboard
+- Comprehensive project documentation
+
+---
+
+# Support
+
+If you found this repository useful:
+
+⭐ Star the repository
+
+🍴 Fork the repository
+
+📢 Share it with others
+
+---
+
+> **"Machine learning should not only predict the future—it should help decision-makers shape it."**
+
